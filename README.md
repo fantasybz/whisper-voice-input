@@ -4,7 +4,7 @@ A Raycast extension that records audio, transcribes it using whisper-cpp, and pa
 
 ![Demo](demo/demo.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C_h3kMNlO6o" title="Whisper Voice Input Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Whisper Voice Input Demo](https://img.youtube.com/vi/C_h3kMNlO6o/0.jpg)](https://www.youtube.com/watch?v=C_h3kMNlO6o)
 
 ---
 
