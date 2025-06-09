@@ -4,16 +4,14 @@
   "description": "Record audio and transcribe it using OpenAI's Whisper model",
   "icon": "assets/icon.png",
   "author": "kochi_chuang",
-  "categories": [
-    "Productivity"
-  ],
+  "categories": ["Productivity"],
   "license": "MIT",
   "commands": [
     {
       "name": "whisper-voice-input",
       "title": "Record and Transcribe",
       "description": "Record audio and transcribe it using Whisper",
-      "mode": "silent",
+      "mode": "no-view",
       "script": "./src/whisper-voice-input.ts"
     }
   ],
