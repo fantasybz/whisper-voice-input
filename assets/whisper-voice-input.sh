@@ -76,17 +76,17 @@ active_app=$(osascript -e '
 )
 
 # Notify: start recording
-terminal-notifier \
+/opt/homebrew/bin/terminal-notifier \
   -title "Whisper Voice Input" \
   -message "🎤 Recording ${DURATION}s..." \
   -sender "$SENDER_BUNDLE" > /dev/null 2>&1
 
 # Record audio
 echo "Recording to $audio_file..."
-ffmpeg -f avfoundation -i ":0" -t "$DURATION" "$audio_file" -y -loglevel error
+/opt/homebrew/bin/ffmpeg -f avfoundation -i ":0" -t "$DURATION" "$audio_file" -y -loglevel error
 
 # Notify: start transcribing
-terminal-notifier \
+/opt/homebrew/bin/terminal-notifier \
   -title "Whisper Voice Input" \
   -message "🧠 Transcribing..." \
   -sender "$SENDER_BUNDLE" > /dev/null 2>&1
@@ -112,7 +112,7 @@ if [ -f "$txt_file" ]; then
   printf '%s' "$(cat "$txt_file")" | pbcopy
 
   # Notify: done
-  terminal-notifier \
+  /opt/homebrew/bin/terminal-notifier \
     -title "Whisper Voice Input" \
     -message "✅ Done! Pasting via cliclick..." \
     -sender "$SENDER_BUNDLE" > /dev/null 2>&1
@@ -123,9 +123,9 @@ if [ -f "$txt_file" ]; then
   sleep 0.3
   /opt/homebrew/bin/cliclick kd:cmd t:v ku:cmd
 else
-  terminal-notifier \
+  /opt/homebrew/bin/terminal-notifier \
     -title "Whisper Voice Input" \
     -message "⚠️ No output file found." \
     -sender "$SENDER_BUNDLE" > /dev/null 2>&1
   exit 1
-fi
+fi 
