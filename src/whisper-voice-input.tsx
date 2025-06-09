@@ -3,6 +3,7 @@ import { promisify } from "util";
 import { showToast, Toast, showHUD } from "@raycast/api";
 import { join } from "path";
 
+// Promisify exec for async/await usage
 const execAsync = promisify(exec);
 
 export default async function Command() {
