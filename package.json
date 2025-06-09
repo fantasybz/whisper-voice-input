@@ -1,16 +1,16 @@
 {
   "name": "whisper-voice-input",
   "title": "Whisper Voice Input",
-  "description": "Record and transcribe voice input using Whisper",
-  "icon": "🤖",
-  "author": "kochi.chuang",
+  "description": "Record audio and transcribe it using OpenAI's Whisper model",
+  "icon": "🎙️",
+  "author": "fantasybz",
   "categories": ["Productivity", "Media"],
   "license": "MIT",
   "commands": [
     {
       "name": "whisper-voice-input",
-      "title": "Whisper Voice Input",
-      "description": "Record and transcribe voice input using Whisper",
+      "title": "Record and Transcribe",
+      "description": "Record audio and transcribe it using Whisper",
       "mode": "silent",
       "script": "./src/whisper-voice-input.ts"
     }
