@@ -1,0 +1,30 @@
+{
+  "name": "whisper-voice-input",
+  "title": "Whisper Voice Input",
+  "description": "Record and transcribe voice input using Whisper",
+  "icon": "🤖",
+  "author": "kochi.chuang",
+  "categories": ["Productivity", "Media"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "whisper-voice-input",
+      "title": "Whisper Voice Input",
+      "description": "Record and transcribe voice input using Whisper",
+      "mode": "silent",
+      "script": "./src/whisper-voice-input.ts"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.64.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint"
+  }
+}
