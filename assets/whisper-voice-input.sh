@@ -27,7 +27,7 @@ set -e
 # Default parameter values
 # --------------------------
 DURATION=5                    # Recording duration in seconds
-LANGUAGE="zh"               # Whisper language (e.g. zh, en)
+LANGUAGE="en"               # Whisper language (e.g. zh, en)
 MODEL_PATH="$HOME/whisper-models/ggml-medium.bin"  # Path to model file
 TMP_DIR="$HOME/whisper_temp"  # Temp directory for audio/text
 SENDER_BUNDLE="com.raycast.macos"  # terminal-notifier sender bundle
@@ -50,7 +50,7 @@ done
 # Ensure defaults if not provided
 # --------------------------
 DURATION=${DURATION:-5}
-LANGUAGE=${LANGUAGE:-"zh"}
+LANGUAGE=${LANGUAGE:-"en"}
 MODEL_PATH=${MODEL_PATH:-"$HOME/whisper-models/ggml-medium.bin"}
 TMP_DIR=${TMP_DIR:-"$HOME/whisper_temp"}
 SENDER_BUNDLE=${SENDER_BUNDLE:-"com.raycast.macos"}
