@@ -2,7 +2,7 @@
 
 A Raycast extension that records audio, transcribes it using whisper-cpp, and pastes the transcribed text back into your active application.
 
-[![Whisper Voice Input Demo](https://img.youtube.com/vi/C_h3kMNlO6o/maxresdefault.jpg)](https://www.youtube.com/watch?v=C_h3kMNlO6o)
+![Demo](metadata/demo.png)
 
 ---
 
