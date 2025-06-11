@@ -132,6 +132,24 @@ This extension is distributed via the Raycast Store. For development or contribu
 
 ---
 
+## 🔍 Error Handling & User Guidance
+
+- **External Dependencies:**  
+  This extension relies on external tools (`ffmpeg`, `whisper-cpp`, `terminal-notifier`, `cliclick`). If you encounter errors, ensure these are installed and accessible in your PATH.  
+  - For Apple Silicon Macs, check `/opt/homebrew/bin/`.  
+  - For Intel Macs, check `/usr/local/bin/`.
+
+- **Whisper Model Issues:**  
+  Ensure the Whisper model file is correctly downloaded and placed in `~/whisper-models/`. If transcription fails, verify the model file integrity and permissions.
+
+- **Permission Issues:**  
+  If the extension fails to record audio or paste text, verify that Raycast has the necessary permissions (microphone and accessibility).
+
+- **Logs and Debugging:**  
+  Check the Raycast logs for detailed error messages. If issues persist, consider enabling verbose logging in the extension settings.
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
