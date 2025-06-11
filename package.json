@@ -3,7 +3,7 @@
   "type": "module",
   "title": "Whisper Voice Input",
   "description": "Record audio and transcribe it using OpenAI's Whisper model",
-  "icon": "assets/assets/icon.png",
+  "icon": "assets/icon.png",
   "author": "kochi_chuang",
   "categories": [
     "Productivity"
