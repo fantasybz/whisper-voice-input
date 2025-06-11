@@ -1,3 +1,4 @@
-import raycastConfig from "@raycast/eslint-config";
-
-export default [...raycastConfig];
+module.exports = {
+  root: true,
+  extends: ["@raycast"]
+};
